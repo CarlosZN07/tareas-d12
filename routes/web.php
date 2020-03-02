@@ -18,3 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('tarea', 'TareaController');
+
+Route::get('prueba/{nombre?}', function($nombre='desconocido'){
+    $nombre = strtoupper($nombre);
+    return view('vista-prueba')->with(['info' => $nombre]);
+});
