@@ -19,12 +19,14 @@
                             <th>Título</th>
                             <th>Descripción</th>
                             <th>Prioridad</th>
+                            <th>Se entrega</th>
                         </tr>
                         <tr>
                             <td>{{ $tarea->id }}</td>
                             <td>{{ $tarea->tarea }}</td>
                             <td>{{ $tarea->descripcion}}</td>
                             <td>{{ $tarea->prioridad}}</td>
+                            <td>{{ $tarea->fecha_entrega}}</td>
                         </tr>
                     </table>
                 </div>

@@ -37,7 +37,7 @@ class TareaController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'tarea' => 'required|max:255',
+            'tarea' => 'required|max:5',
             'descripcion' => 'required',
             'fecha_entrega' => 'required|date',
             'prioridad' => 'required|int|min:1|max:3',
